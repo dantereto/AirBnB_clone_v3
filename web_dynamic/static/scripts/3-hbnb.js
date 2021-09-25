@@ -31,7 +31,9 @@ $.ajax({
     data: JSON.stringify({}),
     success: function(data) {
 	for (const i = 0; i < data.lenght; i++) {
-	    const art = '<article><div class="title_box"><h2>' + data[i].name + '</h2><div class="price_by_night">' + data[i].price_by_night + '</div></div><div class="information">
+		const place = data[i]
+	    $('places ').append('<article><div class="title_box"><h2>' + place.name + '</h2><div class="price_by_night">' + place.price_by_night + '</div></div><div class="information"><div class="max_guest">' + place.max_guest + '</div><div class="number_rooms">' + place.number_rooms + '</div><div class="number_bathrooms">' + place.number_bathrooms + '</div></div><div class="description">' + place.description + '</div></article>');
+}
 }
 });
 });
