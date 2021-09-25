@@ -14,6 +14,6 @@ window.addEventListener('DOMContentLoaded', function () {
 	  });
 	}
 	const update = list_n.join(', ');
-	$('.amenities h4'.text(update);
+	$('.amenities h4'.text(update));
 });
 });
