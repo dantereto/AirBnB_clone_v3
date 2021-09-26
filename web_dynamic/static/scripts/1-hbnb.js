@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () { 
-    list_n = []
-    list_id = []
+    const list_n = []
+    const list_id = []
     $('input:checkbox').click(function () {
 	if ($this.is(':checked')) {
 	    list_id.push($this.attr('data-id'));
